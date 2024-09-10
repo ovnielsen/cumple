@@ -18,7 +18,7 @@ window.onload = function () {
         actionButton.textContent = "🤘nice!";
         actionButton.classList.add("dissapear");
         map.classList.add("appear");
-        // playButton.click();
+        playButton.click();
         notice.scrollIntoView({
             behavior: "smooth",
             block: "end",
