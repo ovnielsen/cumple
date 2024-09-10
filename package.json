@@ -1,8 +1,8 @@
 {
   "dependencies": {
-      "@vercel/edge": "^0.1.2"
-    },
+    "@vercel/edge": "^0.1.2"
+  },
   "scripts": {
-    "dev": "npx live-server"
+    "dev": "npx live-server -y"
   }
 }
