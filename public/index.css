@@ -28,9 +28,11 @@ h1,h2,h3{
 }
 #elem3{
     z-index: 5;
+    animation: broSwing 4s ease-in-out infinite alternate;
 }
 #elem4{
     z-index: 4;
+    animation: helloSwing 2.8s ease-in-out infinite alternate;
 }
 #elem5{
     z-index: 3;
@@ -49,6 +51,97 @@ h1,h2,h3{
     object-fit: contain;
     height: auto;
     width: 100%;
+}
+
+@keyframes helloSwing {
+    0% {
+        transform: translateY(-10px) rotate(-3deg);
+    }
+    100% {
+        transform: translateY(10px) rotate(3deg);
+    }
+}
+@keyframes broSwing {
+    0% {
+        transform: translateY(-10px) rotate(-3deg);
+    }
+    100% {
+        transform: translateY(10px) rotate(3deg);
+    }
+}
+
+@keyframes bobVertical {
+    0% {
+        transform: translateY(18px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(18px);
+    }
+}
+@keyframes bobLessVertical {
+    0% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(16px);
+    }
+}
+@keyframes waveHello {
+    0% {
+        opacity: 1;
+        transform: translate(-18px, 30px) rotate(-4deg);
+    }
+    20% {
+        opacity: 1;
+        transform: translate(12px, 8px) rotate(3deg);
+    }
+    40% {
+        opacity: 1;
+        transform: translate(-8px, -10px) rotate(-2deg);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(14px, 0px) rotate(2deg);
+    }
+    80% {
+        opacity: 1;
+        transform: translate(-10px, -8px) rotate(-1deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+@keyframes waveHelloOpposite {
+    0% {
+        opacity: 1;
+        transform: translate(18px, 30px) rotate(4deg);
+    }
+    20% {
+        opacity: 1;
+        transform: translate(-12px, 8px) rotate(-3deg);
+    }
+    40% {
+        opacity: 1;
+        transform: translate(8px, -10px) rotate(2deg);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(-14px, 0px) rotate(-2deg);
+    }
+    80% {
+        opacity: 1;
+        transform: translate(10px, -8px) rotate(1deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px) rotate(0deg);
+    }
 }
 
 .card2{
