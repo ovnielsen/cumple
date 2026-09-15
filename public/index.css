@@ -2,15 +2,15 @@ html,body{
     margin: 0;
     font-family: Helvetica;
     overflow-x: hidden;
+    min-height: 100dvh;
 }
 
 body{
     /* colors #4422FC #6E2DFF #A142FF */
     height: 100%;
-    background: #3c20fb;
+    background: #3b6550;
     transition: opacity 1s;
     max-width: 500px;
-    /* background: linear-gradient(0deg, rgba(68,34,252,1) 0%, rgba(110,45,255,1) 50%, rgba(161,66,255,1) 100%); */
 }
 
 h1,h2,h3{
@@ -20,147 +20,30 @@ h1,h2,h3{
     font-size: clamp(16px, 5vw, 32px); 
 }
 
-#fondo {
-    position: relative;
-    height: 100%;
-
-    max-width: 500px;
+#elem1{
+    z-index: 7;
 }
-
-#fondo::before{
-    display:block;
-    background-image: url("public/img/cumple/Fondo_elementos.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: fireworks 5s linear infinite;
-    content: ' ';
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 500px;
+#elem2{
+    z-index: 6;
 }
-
-#music {
-    height: 80%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    background-image: url("public/img/cumple/music.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-blend-mode: difference;
-    animation: musics 2s ease-in-out infinite;
-    max-width: 500px;
+#elem3{
+    z-index: 5;
 }
-#bros {
-    height: 80%;
-    width: 100%;
-    max-width: 500px;
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    background-image: url("public/img/cumple/Bros.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-blend-mode: difference;
+#elem4{
+    z-index: 4;
 }
-
-
-#numbers {
-    max-width: 500px;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
+#elem5{
+    z-index: 3;
+}
+#elem6{
+    z-index: 2;
+}
+#elem7{
     z-index: 1;
-    background-image: url("public/img/cumple/Nosotros.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-blend-mode: difference;
-    animation: floating 5s infinite ease-in-out; 
 }
-
-@keyframes floating  {
-  0%{
-    transform: translateY(0);
-  }
-  50%{
-    transform: translateY(-20px);
-  }
-  100%{
-    transform: translateY(0);
-  }
+#elem8{
+    z-index: 0;
 }
-
-@keyframes musics {
-    0%{
-        transform: translate(0 0);
-        transform: rotate(0deg);
-    }
-    50%{
-        transform: translate(2px 5px);
-        transform: rotate(2deg);
-    }
-    100%{
-        transform: translate(0 0);
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes fireworks {
-    0% { opacity: 0.4;}
-    50%{ opacity: 1;}
-    100%{opacity: 0.5;}
-}
-.text-wrapper{
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-.title{
-    align-self: center;
-    text-align: center;
-    color:whitesmoke;
-    padding-top: 10px;
-}
-.phrase{
-    max-width: 230px;
-}
-
-.footer{
-    color:whitesmoke;
-    padding-left: 40px;
-
-}
-
-.date{
-    width: fit-content;
-    border-radius: 30px;
-    background-color: black;
-    padding: 0 10px 3px 10px;
-    color:whitesmoke;
-}
-
-.card {
-    max-width: 500px;
-    height: 550px;
-    max-width: 500px;
-    width: 100%;
-    background-image: url("public/img/cumple/Fondo_base.png");
-    background-size: cover;
-}
-
-.subtitle {
-    width: 500px;
-    text-align: center;
-    letter-spacing: calc((500px - (5 * 1ch))/80);
-}
-
 
 .images{
     object-fit: contain;
@@ -181,72 +64,11 @@ h1,h2,h3{
     width: 100%;
     height: calc(100vw + 145px);
     max-height: 700px;
-}
-
-.action{
- padding-top: 6%;
- position: relative;
- height: 300px;
- max-width: 500px;
-}
-
-.action button{
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    font-size: x-large;
-    background-color: #ff5bde;
-    transition: opacity 1s ease-in-out;
-    border: none;
-    top: 20px;
-    color: white;
-}
-
-.dissapear{
-    opacity: 0;
-}
-.appear{
-    opacity: 1;
-}
-#fondo2{
-    animation: fireworks 5s linear infinite;
-}
-
-#numbers2{
-    animation: floating 5s infinite ease-in-out; 
-}
-#music2{
-    animation: musics 2s ease-in-out infinite;
-
-}
-
-#nice{
-    transition: opacity 1s ease-in-out;
-    height: 300px;
-}
-
-#map{
-    transition: opacity 1s ease-in-out;
-    width: 100vw;
-    height: 100%;
-    max-width: 500px;
-}
-
-.notify{
-    text-align: center;
-    color: whitesmoke;
-}
-
-.notify p a {
-    color: #ff5bde;
-}
-
-.map{
-    width: 100vw;
-    height: 250px;
+    pointer-events: none; 
 }
 
 #footer{
+    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
