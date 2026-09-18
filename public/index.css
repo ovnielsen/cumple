@@ -5,6 +5,20 @@ html,body{
     min-height: 100dvh;
 }
 
+.text{
+    font-family: Arial;
+    color: #ffe500;
+    font-size: clamp(10px, 5vw, 18px); 
+    margin: 204px 42px 115px 26px;
+    padding: 17px 9px 13px 10px;
+    text-align: justify;
+}
+
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 body{
     /* colors #4422FC #6E2DFF #A142FF */
     height: 100%;
@@ -60,8 +74,8 @@ h1,h2,h3{
 .card2{
     position: relative;
     width: 100%;
-    height: calc(100vw + 145px);
-    max-width: 500px;
+    height: calc(100vw);
+    max-width: 418px; 
     max-height: 700px;
 }
 
