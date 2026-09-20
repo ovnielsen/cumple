@@ -9,14 +9,15 @@ html,body{
     font-family: Arial;
     color: #ffe500;
     font-size: clamp(10px, 5vw, 18px); 
-    margin: 204px 42px 115px 26px;
-    padding: 17px 9px 13px 10px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 p{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 body{
@@ -24,7 +25,12 @@ body{
     height: 100%;
     background: #3b6550;
     transition: opacity 1s;
-    max-width: 500px;
+}
+
+.buttons{
+    display:flex;
+    width:100%;
+    justify-content:space-around;
 }
 
 h1,h2,h3{
@@ -34,33 +40,30 @@ h1,h2,h3{
     font-size: clamp(16px, 5vw, 32px); 
 }
 
-#elem1{
-    z-index: 7;
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#elem2{
-    z-index: 6;
-    /* animations removed for scroll parallax */
+
+.poster{
+  position: relative;
+  width: 100%;
+  max-width: 900px;
 }
-#elem3{
-    z-index: 5;
-    /* animations removed for scroll parallax */
-}
-#elem4{
-    z-index: 4;
-    /* animations removed for scroll parallax */
-}
-#elem5{
-    z-index: 3;
-    /* animations removed for scroll parallax */
-}
-#elem6{
-    z-index: 2;
-}
-#elem7{
-    z-index: 1;
-}
-#elem8{
-    z-index: 0;
+
+.status-overlay{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: clamp(16px, 4vw, 28px);
+  text-align: center;
+  pointer-events: none;
 }
 
 .images{
@@ -69,15 +72,6 @@ h1,h2,h3{
     width: 100%;
 }
 
-/* All animations removed; parallax will handle movement */
-
-.card2{
-    position: relative;
-    width: 100%;
-    height: calc(100vw);
-    max-width: 418px; 
-    max-height: 700px;
-}
 
 .overlay{
     position: absolute;

@@ -9,48 +9,16 @@
     <title>&#x1F973; Bros B-day</title>
     <link rel="stylesheet" href="public/index.css">
     <script defer src="/_vercel/insights/script.js"></script>
-
 </head>
 
 <body>
-    <div class="card2">
-        <div id="elem1" class="overlay" data-depth="0.20">
-            <img class="images" src="public/img/cumple/1.webp" alt="" srcset="">
-        </div>
-        <div id="elem1" class="overlay" data-depth="0.18">
-            <img class="images" src="public/img/cumple/1b.webp" alt="" srcset="">
-        </div>
-        <div id="elem2" class="overlay" data-depth="0.15">
-            <video class="images" muted autoplay playsinline loop>
-                <source src="public/vid/2t.webm" type="video/webm">
-            </video>
-        </div>
-        <div id="elem3" class="overlay" data-depth="0.12">
-            <img class="images" src="public/img/cumple/3.webp" alt="" srcset="">
-        </div>
-        <div id="elem4" class="overlay" data-depth="0.09">
-            <img class="images" src="public/img/cumple/4.webp" alt="" srcset="">
-        </div>
-        <div id="elem5" class="overlay" data-depth="0.07">
-            <video class="images" muted autoplay playsinline loop>
-                <source src="public/vid/5t.webm" type="video/webm">
-            </video>
-        </div>
-        <div id="elem6" class="overlay" data-depth="0.05">
-            <img class="images" src="public/img/cumple/6.webp" alt="" srcset="">
-        </div>
-        <div id="elem7" class="overlay" data-depth="0.03">
-            <img class="images" src="public/img/cumple/7.webp" alt="" srcset="">
-        </div>
-        <div id="elem8" class="overlay" data-depth="0.02">
-            <img class="images" src="public/img/cumple/8.webp" alt="" srcset="">
-        </div>
+    <div class="container">
+    <div class="poster">
+        <img class="images" src="public/img/full.webp" alt="" srcset="">
+        <div id="statusOverlay" class="status-overlay" aria-hidden="true" style="display:none"></div>
     </div>
-    <div class="card2 text">
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28058.93008150027!2d-16.476259417495417!3d28.468514524716973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41d46d81725e59%3A0x9c891b7da5c5d2a7!2sPlaya%20De%20Rojas!5e0!3m2!1ses!2ses!4v1789676412701!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
-        <p>
+    <div class="text">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.968010822543!2d-16.298056523945476!3d28.42022209368932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4033429dcbe585%3A0x64aaa92377e59b68!2sMuelle%20De%20A%C3%B1aza!5e0!3m2!1ses!2ses!4v1789870571475!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>        <p>
             Traete banador y protector solar si quieres pasarte el dia con nosotros en rojas.
         </p>
         <p>
@@ -62,20 +30,14 @@
         <p>
             Tendremos musica y alguna bebida espiritual por si te quieres unir al ritual
         </p>
-
-        <div>
-
-
-          <div>
-                    <p>
-            Si no tienes coche o no sabes llegar no te preocupes tenemos la solucion
-        </p>
-        <p>
-            Puedes aparcar el coche aqui, cerca del mirador las breñas.Te iremos a buscar
-        </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.23499573353!2d-16.447691224593697!3d28.472468791331494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41d474b85c1b2b%3A0x4f79384657dc145d!2sMirador%20de%20Las%20Bre%C3%B1as!5e0!3m2!1ses!2ses!4v1789676534075!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>          </div>
-
-          </div>
     </div>
+            <div class="buttons">
+                <button id="btnYes" style="padding:10px 14px;font-size:14px;border-radius:6px;border:none;background:#39b54a;color:#fff;cursor:pointer">YES!</button>
+                <button id="btnSorry" style="padding:10px 14px;font-size:14px;border-radius:6px;border:none;background:#f2b138;color:#000;cursor:pointer">SORRY</button>
+                <button id="btnNo" style="padding:10px 14px;font-size:14px;border-radius:6px;border:none;background:#e04b4a;color:#fff;cursor:pointer">NOP</button>
+            </div>
+    </div>
+        <script src="public/confirm-name.js" defer></script>
+        <script src="public/init-confirm.js" defer></script>
 </body>
 </html>
