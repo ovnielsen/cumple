@@ -1,8 +1,14 @@
 {
+  "type": "module",
   "dependencies": {
-    "@vercel/edge": "^0.1.2"
+    "@supabase/supabase-js": "^2.116.0",
+    "@vercel/edge": "^0.1.2",
+    "pg": "^8.11.0"
   },
   "scripts": {
     "dev": "npx live-server -y"
+  },
+  "engines": {
+    "node": "24.x"
   }
 }
