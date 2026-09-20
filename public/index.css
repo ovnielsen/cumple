@@ -68,6 +68,7 @@ h1,h2,h3{
   font-size: clamp(16px, 4vw, 28px);
   text-align: center;
   pointer-events: none;
+  animation: movement 2s infinite;
 }
 
 .images{
@@ -139,4 +140,16 @@ h1,h2,h3{
   */
   #root, #__next {
     isolation: isolate;
+  }
+
+  @keyframes movement {
+    from{
+      left:45%;
+    }
+    50%{
+      left:55%;
+    }
+    to{
+      left:45%;
+    }
   }
