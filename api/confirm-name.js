@@ -37,7 +37,10 @@ export default async function handler(req, res) {
 
   // Use Supabase client when service role key is available
   if (SUPABASE_URL && SUPABASE_KEY) {
-    const supabase = createClient(SUPABASE_URL, SUPABASE_KEY, { auth: { persistSession: false } });
+    const supabase = createClient(SUPABASE_URL, SUPABASE_KEY, {
+      auth: { persistSession: false },
+      realtime: { enabled: false }
+    });
     try {
       const { data: rows, error: selectError } = await supabase
         .from(TABLE)

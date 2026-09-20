@@ -5,39 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#9a88ff">
+    <meta name="description" content="Vente a nuestro cumple!🥳">
     <link rel="icon" type="image/png" href="public/img/cumple/favicon.png" />
     <title>&#x1F973; Bros B-day</title>
     <link rel="stylesheet" href="public/index.css">
     <script defer src="/_vercel/insights/script.js"></script>
+    <link rel="preload" href="public/init-confirm.js" as="script">
+    <link rel="preload" href="public/confirm-name.js" as="script">
 </head>
 
 <body>
     <div class="container">
-    <div class="poster">
-        <img class="images" src="public/img/full.webp" alt="" srcset="">
-        <div id="statusOverlay" class="status-overlay" aria-hidden="true" style="display:none"></div>
+        <div class="poster">
+            <img class="images" src="public/img/full.webp" alt="" srcset="">
+            <div id="statusOverlay" class="status-overlay" aria-hidden="true" style="display:none"></div>
+        </div>
+        <div class="text">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.968010822543!2d-16.298056523945476!3d28.42022209368932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4033429dcbe585%3A0x64aaa92377e59b68!2sMuelle%20De%20A%C3%B1aza!5e0!3m2!1ses!2ses!4v1789870571475!5m2!1ses!2ses"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <p>
+                Traete banador y protector solar si quieres pasarte el dia con nosotros en rojas.
+            </p>
+            <p>
+                Ponemos la comida (tambien con opciones vegetarianas )
+            </p>
+            <p>
+                Habran juegos para pasarla bien
+            </p>
+            <p>
+                Tendremos musica y alguna bebida espiritual por si te quieres unir al ritual
+            </p>
+        </div>
+        <div class="buttons">
+            <button id="btnYes"
+                style="padding:10px 14px;font-size:14px;border-radius:6px;border:none;background:#39b54a;color:#fff;cursor:pointer">🥳YES!</button>
+            <button id="btnSorry"
+                style="padding:10px 14px;font-size:14px;border-radius:6px;border:none;background:#f2b138;color:#000;cursor:pointer">😶SORRY</button>
+            <button id="btnNo"
+                style="padding:10px 14px;font-size:14px;border-radius:6px;border:none;background:#e04b4a;color:#fff;cursor:pointer">🫠NOP</button>
+        </div>
     </div>
-    <div class="text">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.968010822543!2d-16.298056523945476!3d28.42022209368932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4033429dcbe585%3A0x64aaa92377e59b68!2sMuelle%20De%20A%C3%B1aza!5e0!3m2!1ses!2ses!4v1789870571475!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>        <p>
-            Traete banador y protector solar si quieres pasarte el dia con nosotros en rojas.
-        </p>
-        <p>
-            Ponemos la comida (tambien con opciones vegetarianas )  
-        </p>
-        <p>
-            Habran juegos para pasarla bien
-        </p>
-        <p>
-            Tendremos musica y alguna bebida espiritual por si te quieres unir al ritual
-        </p>
-    </div>
-            <div class="buttons">
-                <button id="btnYes" style="padding:10px 14px;font-size:14px;border-radius:6px;border:none;background:#39b54a;color:#fff;cursor:pointer">YES!</button>
-                <button id="btnSorry" style="padding:10px 14px;font-size:14px;border-radius:6px;border:none;background:#f2b138;color:#000;cursor:pointer">SORRY</button>
-                <button id="btnNo" style="padding:10px 14px;font-size:14px;border-radius:6px;border:none;background:#e04b4a;color:#fff;cursor:pointer">NOP</button>
-            </div>
-    </div>
-        <script src="public/confirm-name.js" defer></script>
-        <script src="public/init-confirm.js" defer></script>
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/<unique-path>/script.js"></script>
 </body>
+
 </html>
